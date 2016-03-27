@@ -1,0 +1,14 @@
+sfeedback.feedback:
+  path: 'feedback'
+
+sfeedback.admin_create_feedback:
+  path: 'admin/content/feedback/add'
+
+sfeedback.admin_read_feedback:
+  path: 'admin/content/feedback'
+
+sfeedback.admin_update_feedback:
+  path: 'admin/content/feedback/{id}/edit'
+
+sfeedback.admin_delete_feedback:
+  path: 'admin/content/feedback/{id}/delete'

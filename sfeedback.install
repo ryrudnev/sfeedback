@@ -1,0 +1,42 @@
+<?php
+
+function sfeedback_schema(){
+    $schema['sfeedback'] = [
+        'description' => 'The base table for simple feedback module.',
+        'fields' => [
+            'id' => [
+                'description' => 'The primary identifier.',
+                'type' => 'serial',
+                'unsigned' => TRUE,
+                'not null' => TRUE
+            ],
+
+            'fullname' => [
+                'description' => 'The fIO of user.',
+                'type' => 'varchar',
+                'length' => 255,
+                'not null' => TRUE
+            ],
+
+            'email' => [
+                'description' => 'The e-mail of user.',
+                'type' => 'varchar',
+                'length' => 255,
+                'not null' => TRUE
+            ],
+
+            'text' => [
+                'description' => 'The simple message.',
+                'type' => 'text',
+                'not null' => TRUE
+            ]
+        ],
+        'indexes' => [
+            'sfeedback_fullname' => ['fullname'],
+            'sfeedback_email' => ['email']
+        ],
+        'primary key' => ['id']
+    ];
+
+    return $schema;
+}
