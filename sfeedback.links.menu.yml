@@ -1,0 +1,6 @@
+sfeedback.feedback:
+  title: Feedback
+  description: Simple feedback
+  route_name: sfeedback.feedback
+  menu_name: main
+  weight: 100

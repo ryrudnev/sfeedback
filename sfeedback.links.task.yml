@@ -1,0 +1,4 @@
+sfeedback.admin.read:
+  title: Feedback
+  route_name: sfeedback.admin.read
+  base_route: system.admin_content
