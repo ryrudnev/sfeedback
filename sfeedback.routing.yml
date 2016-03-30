@@ -4,10 +4,10 @@ sfeedback.feedback:
     _form: '\Drupal\sfeedback\Form\FeedbackForm'
     _title: 'Feedback'
   requirements:
-    _permission: 'access feedback page'
+    _permission: 'access content'
 
 sfeedback.admin.create:
-  path: '/admin/content/feedback/add'
+  path: '/admin/content/feedbacks/add'
   defaults:
     _form: '\Drupal\sfeedback\Form\FeedbackForm'
     _title: 'Create feedback'
@@ -16,7 +16,7 @@ sfeedback.admin.create:
     _role: 'administrator'
 
 sfeedback.admin.read:
-  path: '/admin/content/feedback'
+  path: '/admin/content/feedbacks'
   defaults:
     _controller: '\Drupal\sfeedback\Controller\FeedbackController::content'
   requirements:
@@ -24,7 +24,7 @@ sfeedback.admin.read:
     _role: 'administrator'
 
 sfeedback.admin.update:
-  path: '/admin/content/feedback/{id}/edit'
+  path: '/admin/content/feedbacks/{id}/edit'
   defaults:
     _form: '\Drupal\sfeedback\Form\FeedbackForm'
     _title: 'Edit feedback'
@@ -33,7 +33,7 @@ sfeedback.admin.update:
     _role: 'administrator'
 
 sfeedback.admin.delete:
-  path: '/admin/content/feedback/{id}/delete'
+  path: '/admin/content/feedbacks/{id}/delete'
   defaults:
     _form: '\Drupal\sfeedback\Form\FeedbackDeleteForm'
     _title: 'Delete feedback'

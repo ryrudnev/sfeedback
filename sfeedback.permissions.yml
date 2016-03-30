@@ -1,7 +1,3 @@
-access sfeedback page:
-  title: Access to feedback page
-  description: Allow users to access simple page
-
 administer sfeedback:
   title: Administer feedback
   description: Manage user's feedback.
