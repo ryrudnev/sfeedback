@@ -5,7 +5,6 @@ namespace Drupal\sfeedback\Form;
 use Drupal\Core\Form\FormBase;
 use Drupal\Core\Link;
 use Drupal\Core\Form\FormStateInterface;
-use Drupal\Core\Url;
 use Drupal\sfeedback\Storage\FeedbackStorage;
 use Drupal\Component\Utility\Html;
 
@@ -64,7 +63,7 @@ class FeedbackForm extends FormBase
         $form['email'] = [
             '#type' => 'email',
             '#title' => t('Email'),
-            '#attributes' => ['placeholder' => t('Enter email')],
+            '#attributes' => ['placeholder' => t('Enter e-mail')],
             '#default_value' => $feedback['email']
         ];
         $form['text'] = [
@@ -108,7 +107,7 @@ class FeedbackForm extends FormBase
         }
 
         if (!\Drupal::service('email.validator')->isValid($form_state->getValue('email'))) {
-            $form_state->setErrorByName('email', t('Invalid email'));
+            $form_state->setErrorByName('email', t('Invalid e-mail'));
         }
 
         if (strlen($form_state->getValue('text')) === 0) {

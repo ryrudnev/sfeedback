@@ -21,7 +21,7 @@ class FeedbackController extends ControllerBase
         $tableHeader = [
             'id' => t('Id'),
             'fullname' => t('FullName'),
-            'email' => t('Email'),
+            'email' => t('E-mail'),
             'text' => t('Text'),
             'actions' => t('Actions')
         ];
